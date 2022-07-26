@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              pnguin: '#FFFBF0',
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body>
+    <header class="bg-pnguin pb-32 pt-12">
+      <section
+        class="container mx-auto sm:flex gap-8 items-center justify-around"
+      >
+        <div
+          class="space-y-5 flex items-center justify-center flex-col sm:justify-start sm:items-start"
+        >
+          <h1
+            class="text-2xl sm:text-7xl font-bold uppercase text-center sm:text-left"
+          >
+            <span class="text-yellow-300">Be the Penguins</span>
+            <br />
+            <span class="text-stone-800">of Winter</span>
+          </h1>
+          <p class="sm:font-bold text-center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+
+          <button
+            class="uppercase bg-[#A4BC46] py-3 px-5 sm:py-5 sm:px-7 text-white font-bold rounded-md first-letter:"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 inline"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="{2}"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+            Buy Now
+          </button>
+        </div>
+
+        <div class="pt-8 sm:pt-0 flex items-center justify-center">
+          <img class="w-1/2 sm:w-full" src="/images/model.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <main></main>
+  </body>
+</html>
